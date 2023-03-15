@@ -1,0 +1,64 @@
+# TYPE GHCI TO START IN TERMINAL
+
+head[1,2,3,4,5]
+tail[1,2,3,4,5]
+# select at num 2
+[1,2,3,4,5]!!2
+take 3[1,2,3,4,5]
+drop 3[1,2,3,4,5]
+length[1,2,3,4,5]
+sum[1,2,3,4,5]
+product[1,2,3,4,5]
+[1,2,3] ++ [4,5]2
+reverse[1,2,3,4,5]
+
+# example of function
+double x = x + x
+double 8
+
+quadruple x = double (double x)
+
+# save with hs extension
+# run the terminal in the right folder to load
+# :load test.hs
+
+# doulbe 2 and take that from it
+take (double 2)[1,2,3,4,5,6]    
+
+# factorial / average functions
+# average uses `` back codes not quotation marks
+factorial n = product[1..n]
+average ns = sum ns 'div' length ns
+# anoter way of using div
+average ns = div (sum ns) (length ns)
+
+#reload the file
+:reload
+
+# generates list of numbers
+[1..n]
+
+# By convention, list arguments usually have an s suffix on 
+# their name.  For example:
+# xs ns nss
+
+#  USEFUL GHCI CommandS
+# :load name load script name
+# :reload reload current script
+# :edit name edit script name
+# :edit edit current script
+# :type expr show type of expr
+# :? show all commands
+# :quit quit GHCi
+
+# init removes the last element
+
+# checks the type
+:type
+
+# list of lists
+[[’a’],[’b’,’c’]] :: [[Char]]
+
+# tuples can have diff types
+(False,’a’,True) :: (Bool,Char,Bool)
+
